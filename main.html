@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #070707, #0db4f7);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .quote-box {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 80%;
+
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .quote {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    .author {
+      font-size: 1.1em;
+      color: rgb(22, 22, 22);
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #e9ebec;
+      color: #070707;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #87d197;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <div class="quote" id="quote">"Click the button to get inspired!"</div>
+    <div class="author" id="author">VIJAY MOURYA </div>
+    <button onclick="generateQuote()">New Quote</button>
+  </div>
+</body> 
+  <script src="/script.js"></script>
+</html>
